@@ -1,0 +1,117 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background: transparent;
+    border: 1px solid #e8b024;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8b024;
+}
+
+.title h2 {
+    color: #e8b024;
+    letter-spacing: 1px;
+}
+
+.title h1 {
+    font-size: 25px;
+    color: #e8b024;
+    font-weight: 600;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: goldenrod;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background-color: #00000034;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #444;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+.btn:hover:not([disabled]) {
+    background-color: #222;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background-color: #e8b024;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s;
+}
+
+#next-btn:hover {
+    background-color: transparent;
+    color: #e8b024;
+    border: 1px solid #e8b024;
+}
+
+.correct {
+    background-color: #7cd3a2;
+}
+
+.incorrect {
+    background-color: #dc8383;
+}
